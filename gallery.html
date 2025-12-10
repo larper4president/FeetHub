@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a class="active" href="gallery.html">Gallery</a>
+  <a href="upload.html">Upload</a>
+  <a href="about.html">About</a>
+  <a href="account.html">Account</a>
+</nav>
+
+<section class="controls">
+  <input id="searchBar" type="text" placeholder="Search..." oninput="updateGallery()">
+
+  <select id="categoryFilter" onchange="updateGallery()">
+    <option value="all">All Categories</option>
+  </select>
+
+  <select id="sortFilter" onchange="updateGallery()">
+    <option value="az">A → Z</option>
+    <option value="za">Z → A</option>
+  </select>
+</section>
+
+<div id="gallery" class="gallery"></div>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
