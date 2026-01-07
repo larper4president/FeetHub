@@ -6,32 +6,43 @@
     <title>Sign Up</title>
     <link rel="stylesheet" href="feethub-style.css">
 </head>
-<nav> 
-  <a href="index.html">Go back to the hompage</a>
-  <a href="login.html">Log In to an existing account</a>
-</nav>
+
 <body>
+
+    <header class="nav">
+        <button onclick="location.href='index.html'">Go back to Verification Page</button>
+        <button onclick="location.href='login.html'">Log In to an existing account</button>
+    </header>
+
     <div class="form-container">
         <h2>Sign Up</h2>
+
         <form id="signup-form">
             <div class="input-group">
                 <label for="username">Username</label>
-                <input type="text" id="username" required>
+                <input type="text" id="username">
             </div>
+
             <div class="input-group">
                 <label for="email">Email</label>
-                <input type="email" id="email" required>
+                <input type="email" id="email">
             </div>
+
             <div class="input-group">
                 <label for="password">Password</label>
-                <input type="password" id="password" required>
+                <input type="password" id="password">
             </div>
+
             <div class="input-group">
                 <label for="confirm-password">Confirm Password</label>
-                <input type="password" id="confirm-password" required>
+                <input type="password" id="confirm-password">
             </div>
+
             <button type="submit">Sign Up</button>
         </form>
+        
+        <div id="signup-message"></div>
+
         <p>Already have an account? <a href="login.html">Log In</a></p>
     </div>
 

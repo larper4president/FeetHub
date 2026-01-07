@@ -1,25 +1,33 @@
 document.getElementById('signup-form').addEventListener('submit', function(event) {
     event.preventDefault();
 
-    const username = document.getElementById('username').value;
-    const email = document.getElementById('email').value;
+    const username = document.getElementById('username').value.trim();
+    const email = document.getElementById('email').value.trim();
     const password = document.getElementById('password').value;
     const confirmPassword = document.getElementById('confirm-password').value;
-    const errorBox = document.getElementById('signup-error');
+    const messageBox = document.getElementById('signup-message');
 
-    // Clear previous messages
-    errorBox.textContent = "";
+    // Reset message
+    messageBox.textContent = "";
+    messageBox.className = "";
 
     if (!username || !email || !password || !confirmPassword) {
-        errorBox.textContent = "All fields are required!";
+        messageBox.textContent = "All fields are required.";
+        messageBox.classList.add("error");
         return;
     }
 
     if (password !== confirmPassword) {
-        errorBox.textContent = "Passwords do not match!";
+        messageBox.textContent = "Passwords do not match.";
+        messageBox.classList.add("error");
         return;
     }
 
-    // Success — you can also show a success message if you want
-    window.location.href = "login.html";
+    // Success message (NO alert)
+    messageBox.textContent = "Sign-up successful! Redirecting...";
+    messageBox.classList.add("success");
+
+    setTimeout(() => {
+        window.location.href = "homepage.html";
+    }, 1500);
 });

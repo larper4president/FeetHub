@@ -1,20 +1,29 @@
 document.getElementById('login-form').addEventListener('submit', function(event) {
     event.preventDefault();
 
-    const email = document.getElementById('login-email').value;
+    const email = document.getElementById('login-email').value.trim();
     const password = document.getElementById('login-password').value;
-    const errorBox = document.getElementById('error-message');
+    const messageBox = document.getElementById('login-message');
 
-    errorBox.textContent = "";
+    // Reset message
+    messageBox.textContent = "";
+    messageBox.className = "";
 
     if (!email || !password) {
-        errorBox.textContent = "Both fields are required!";
+        messageBox.textContent = "Both fields are required.";
+        messageBox.classList.add("error");
         return;
     }
 
     if (email === "user@example.com" && password === "password123") {
-        window.location.href = "dashboard.html";
+        messageBox.textContent = "Login successful! Redirecting...";
+        messageBox.classList.add("success");
+
+        setTimeout(() => {
+            window.location.href = "dashboard.html";
+        }, 1500);
     } else {
-        errorBox.textContent = "Invalid credentials, please try again.";
+        messageBox.textContent = "Invalid credentials, please try again.";
+        messageBox.classList.add("error");
     }
 });
