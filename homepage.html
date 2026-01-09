@@ -1,219 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FeetHub</title>
+    <link rel="stylesheet" href="feethub-style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FeetHub</title>
-  <link rel="stylesheet" href="feethub-style.css">
-</head>
+  <body>
+    <nav class="top-nav" role="menubar">
+      <ul class="nav-categories">
+        <li>
+          <button
+            onclick="location.href='feetpictures.html'"
+            class="main-category"
+            data-category="pictures"
+            aria-expanded="false"
+            aria-controls="sub-nav"
+          >
+            Feet Pictures <span class="arrow">▼</span>
+          </button>
+        </li>
 
-<body>
-  <header class="nav">
-    <button onclick="location.href='about.html'">About FeetHub</button>
-    <button onclick="location.href='feetpictures.html'">Pictures of Feet</button>
-    <button onclick="location.href='feetvideos.html'">Videos of Feet</button>
-    <button onclick="location.href='feetaudios.html'">Audios of Feet</button>
-    <button onclick="location.href='mostpopular.html'">Most Popular Multi-Media Content</button>
-    <button onclick="location.href='upload.html'">Upload Your Own Content</button>
-    <button onclick="location.href='account.html'">Your Account</button>
-  </header>
-  <section class="hero">
-    <h1>Welcome to FeetHub</h1>
-    <p>
-      Your ultimate destination for all things feet-related. Explore,
-      share, and enjoy a vast collection of footpictures, videos, and audios.
-    </p>
+        <li>
+          <button
+            onclick="location.href='feetvideos.html'"
+            class="main-category"
+            data-category="videos"
+            aria-expanded="false"
+            aria-controls="sub-nav"
+          >
+            Feet Videos <span class="arrow">▼</span>
+          </button>
+        </li>
 
-    <div class="discover-feet">
-      <h1>Discover Feet Content</h1>
+        <li>
+          <button
+            onclick="location.href='mostpopular.html'"
+            class="main-category"
+            data-category="popular"
+            aria-expanded="false"
+            aria-controls="sub-nav"
+          >
+            Most Popular <span class="arrow">▼</span>
+          </button>
+        </li>
+
+        <li>
+          <button onclick="location.href='topactor.html'" class="main-category">
+            Top Foot Actor Rankings
+          </button>
+        </li>
+
+        <li>
+          <button onclick="location.href='upload.html'" class="main-category">
+            Upload Your Own Content
+          </button>
+        </li>
+
+        <li>
+          <button onclick="location.href='account.html'" class="main-category">
+            Your Account
+          </button>
+        </li>
+      </ul>
+
+      <div class="nav-indicator"></div>
+    </nav>
+
+    <div class="sub-nav" id="sub-nav" role="menu">
+      <ul class="sub-nav-list" data-parent="pictures">
+        <li><a href="efeetpictures.html">Ebony Feet</a></li>
+        <li><a href="wfeetpictures.html">White Feet</a></li>
+        <li><a href="ptnfeetpictures.html">Painted Toe Nails</a></li>
+        <li><a href="fisfeetpictures.html">Feet In Socks</a></li>
+        <li><a href="afeetpictures.html">Anime Feet</a></li>
+        <li><a href="fcfeetpictures.html">Feet Closeups</a></li>
+        <li><a href="cfeetpictures.html">Cartoon Feet</a></li>
+      </ul>
+
+      <ul class="sub-nav-list" data-parent="videos">
+        <li><a href="fbrfeetvideos.html">Feet Being Rubbed</a></li>
+        <li><a href="fbofeetvideos.html">Feet Being Oiled</a></li>
+        <li><a href="figfeetvideos.html">Feet In General</a></li>
+      </ul>
+
+      <ul class="sub-nav-list" data-parent="popular">
+        <li><a href="figfeetpictures.html">Feet In General ( Pictures Of Feet )</a></li>
+        <li><a href="ptnfeetpictures.html">Painted Toe Nails</a></li>
+        <li><a href="wfeetpictures.html">White Feet</a></li>
+      </ul>
+    </div>
+
+    <section class="hero">
+      <h1>Welcome to FeetHub</h1>
       <p>
-        Dive into our extensive library of footpictures, videos, and audios.
-        Whether you're looking for artistic shots, candid moments, or
-        soothing foot-related sounds, FeetHub has it all. On the homepage of feet hub
-        you will be seeing the most popular
-        multi-media content that other users have uploaded and rated highly
-        . You can also navigate to specific sections for pictures, videos,
-        and audios of feet using the navigation bar at the top. Be sure to broaden
-        your horizons and check out all the unique and diverse content our
-        community has to offer!
+        Your ultimate destination for all things feet-related. Explore, share,
+        and enjoy a vast collection of footpictures, videos, and audios.
       </p>
 
-      <a class="button" href="mostpopular.html">Explore the Most Popular Multi-Media Content</a>
-    </div>
-  </section>
+      <div class="discover-feet">
+        <h1>Discover Feet Content</h1>
+        <p>
+          Dive into our extensive library of footpictures, videos, and audios.
+          Whether you're looking for artistic shots, candid moments, or soothing
+          foot-related sounds, FeetHub has it all. On the homepage of feet hub
+          you will be seeing the most popular multi-media content that other
+          users have uploaded and rated highly . You can also navigate to
+          specific sections for pictures, videos, and audios of feet using the
+          navigation bar at the top. Be sure to broaden your horizons and check
+          out all the unique and diverse content our community has to offer!
+        </p>
 
-  <div class="container">
-    <div class="grid">
+        <a class="button" href="mostpopular.html"
+          >Explore the Most Popular Multi-Media Content</a>
+      </div>
+    </section>
 
-      <div class="card">
-        <img src="images/dmwt.jpg" alt="Damp, Mouth-watering Toes">
-        <div class="caption">
-          Damp, Mouth-watering Toes
+    <div class="container">
+      <div class="grid">
+        <div class="card">
+          <img src="images/dmwt.webp" alt="Damp, Mouth-watering Toes" />
+          <div class="caption">Damp, Mouth-watering Toes</div>
+          <div class="photo-info">
+            Uploaded by: solepeek<br />
+            Likes: 25.6k<br />
+            Comments: 34<br />
+            Views: 1.2M
+          </div>
         </div>
-        <div class="photo-info">
-          Uploaded by: solepeek<br>
-          Likes: 25.6k<br>
-          Comments: 34<br>
-          Views: 1.2M
-      </div>
-      </div>
-
-      <div class="card">
-        <img src="images/statb.jpg" alt="Sandy Toes at the Beach">
-        <div class="caption">
-          Sandy Toes At The Beach
-        </div>
-        <div class="photo-info">
-          Uploaded by: stepwatcher<br>
-          Likes: 12.6k<br>
-          Comments: 370<br>
-          Views: 890k
-      </div>
-      </div>
-
-      <div class="card">
-        <img src="images/etc.jpg" alt="Ebony Toes Closeup">
-        <div class="caption">
-          Ebony Toes Closeup
-        </div>
-        <div class="photo-info">
-          Uploaded by: GoldenSole<br>
-          Likes: 4.8k<br>
-          Comments: 995<br>
-          Views: 430k
-      </div>
-      </div>
-
-      <div class="card">
-        <img src="images/swt.jpg" alt="Sexy White Toenails">
-        <div class="caption">
-          Sexy White Toenails
-        </div>
-        <div class="photo-info">
-          Uploaded by: ArchCreator<br>
-          Likes: 32.6k<br>
-          Comments: 210<br>
-          Views: 2.3M
-      </div>
-      </div>
-
-      <div class="card">
-        <img src="images/ffg.jpg" alt="Friendly Feet Gathering">
-        <div class="caption">
-          Friendly Feet Gathering
-        </div>
-        <div class="photo-info">
-          Uploaded by: BareForm<br>
-          Likes: 8.1k<br>
-          Comments: 145<br>
-          Views: 610k
-      </div>
-      </div>
-
-      <div class="card">
-        <img src="images/dtritd.jpg" alt="Dirty Toes Relaxing In The Dirt">
-        <div class="caption">
-          Dirty Toes Relaxing In The Dirt
-        </div>
-        <div class="photo-info">
-          Uploaded by: DirtLover<br>
-          Likes: 15.3k<br>
-          Comments: 420<br>
-          Views: 1.1M
-      </div>
-      </div>
-
-      <div class="card">
-        <img src="images/rsfaald.jpg" alt="Rubbing Sore Feet After A Long Day">
-        <div class="caption">
-          Rubbing Sore Feet After A Long Day
-        </div>
-        <div class="photo-info">
-          Uploaded by: VelvetSteps<br>
-          Likes: 22.4k<br>
-          Comments: 310<br>
-          Views: 1.5M
-      </div>
-      </div>
-
-      <div class="card">
-        <img src="images/sfpot.jpg" alt="Shy Feet Peeking Out Together">
-        <div class="caption">
-          Shy Feet Peeking Out Together
-        </div>
-        <div class="photo-info">
-          Uploaded by: UrbanFeet<br>
-          Likes: 9.7k<br>
-          Comments: 275<br>
-          Views: 720k
-      </div>
-      </div>
-
-      <div class="card">
-        <img src="images/fhaalr.jpg" alt="Feet Hurt After A Long Run">
-        <div class="caption">
-          Feet Hurt After A Long Run
-        </div>
-        <div class="photo-info">
-          Uploaded by: FootLens<br>
-          Likes: 18.5k<br>
-          Comments: 150<br>
-          Views: 1.3M
-      </div>
-      </div>
-
-      <div class="card">
-        <img src="images/nfgpbmbg.jpg" alt="Naughty Feet Group Punished By Master By Graffiti">
-        <div class="caption">
-          Naughty Feet Group Punished By Master
-        </div>
-        <div class="photo-info">
-          Uploaded by: ToeTales<br>
-          Likes: 27.9k<br>
-          Comments: 400<br>
-          Views: 2.0M
-      </div>
-      </div>
-
-      <div class="card">
-        <img src="images/mtaoycf.jpg" alt="Masseuse Takes Advantage of Young Client's Feet">
-        <div class="caption">
-          Masseuse Takes Advantage Of Young Client's Feet
-        </div>
-        <div class="photo-info">
-          Uploaded by: FootFrame<br>
-          Likes: 14.2k<br>
-          Comments: 220<br>
-          Views: 980k
-      </div>
-      </div>
 
         <div class="card">
-          <img src="images/afsoaspsbf.jpg" alt="Appetizing Feet Served On A Silver Platter Surrounded By Fruits">
+          <img src="images/statb.webp" alt="Sandy Toes at the Beach" />
+          <div class="caption">Sandy Toes At The Beach</div>
+          <div class="photo-info">
+            Uploaded by: stepwatcher<br />
+            Likes: 12.6k<br />
+            Comments: 370<br />
+            Views: 890k
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/etc.webp" alt="Ebony Toes Closeup" />
+          <div class="caption">Ebony Toes Closeup</div>
+          <div class="photo-info">
+            Uploaded by: GoldenSole<br />
+            Likes: 4.8k<br />
+            Comments: 995<br />
+            Views: 430k
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/swt.webp" alt="Sexy White Toenails" />
+          <div class="caption">Sexy White Toenails</div>
+          <div class="photo-info">
+            Uploaded by: ArchCreator<br />
+            Likes: 32.6k<br />
+            Comments: 210<br />
+            Views: 2.3M
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/ffg.webp" alt="Friendly Feet Gathering" />
+          <div class="caption">Friendly Feet Gathering</div>
+          <div class="photo-info">
+            Uploaded by: BareForm<br />
+            Likes: 8.1k<br />
+            Comments: 145<br />
+            Views: 610k
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/dtritd.webp" alt="Dirty Toes Relaxing In The Dirt" />
+          <div class="caption">Dirty Toes Relaxing In The Dirt</div>
+          <div class="photo-info">
+            Uploaded by: DirtLover<br />
+            Likes: 15.3k<br />
+            Comments: 420<br />
+            Views: 1.1M
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="images/rsfaald.webp"
+            alt="Rubbing Sore Feet After A Long Day"
+          />
+          <div class="caption">Rubbing Sore Feet After A Long Day</div>
+          <div class="photo-info">
+            Uploaded by: VelvetSteps<br />
+            Likes: 22.4k<br />
+            Comments: 310<br />
+            Views: 1.5M
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/sfpot.webp" alt="Shy Feet Peeking Out Together" />
+          <div class="caption">Shy Feet Peeking Out Together</div>
+          <div class="photo-info">
+            Uploaded by: UrbanFeet<br />
+            Likes: 9.7k<br />
+            Comments: 275<br />
+            Views: 720k
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/fhaalr.webp" alt="Feet Hurt After A Long Run" />
+          <div class="caption">Feet Hurt After A Long Run</div>
+          <div class="photo-info">
+            Uploaded by: FootLens<br />
+            Likes: 18.5k<br />
+            Comments: 150<br />
+            Views: 1.3M
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="images/nfgpbmbg.webp"
+            alt="Naughty Feet Group Punished By Master By Graffiti"
+          />
+          <div class="caption">Naughty Feet Group Punished By Master</div>
+          <div class="photo-info">
+            Uploaded by: ToeTales<br />
+            Likes: 27.9k<br />
+            Comments: 400<br />
+            Views: 2.0M
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="images/mtaoycf.webp"
+            alt="Masseuse Takes Advantage of Young Client's Feet"
+          />
+          <div class="caption">
+            Masseuse Takes Advantage Of Young Client's Feet
+          </div>
+          <div class="photo-info">
+            Uploaded by: FootFrame<br />
+            Likes: 14.2k<br />
+            Comments: 220<br />
+            Views: 980k
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="images/afsoaspsbf.webp"
+            alt="Appetizing Feet Served On A Silver Platter Surrounded By Fruits"
+          />
           <div class="caption">
             Appetizing Feet Served On A Silver Platter Surrounded By Fruits
           </div>
           <div class="photo-info">
-            Uploaded by: stepdaily<br>
-            Likes: 30.1k<br>
-            Comments: 180<br>
+            Uploaded by: stepdaily<br />
+            Likes: 30.1k<br />
+            Comments: 180<br />
             Views: 2.5M
+          </div>
         </div>
-        </div>
-
       </div>
     </div>
 
     <script src="data.js"></script>
     <script src="script.js"></script>
+    <script src="navscript.js"></script>
 
     <footer class="site-footer">
       <div class="footer-content">
         <div class="footer-section">
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="mostpopular.html">Most Popular Multi-Media Content</a></li>
+            <li>
+              <a href="mostpopular.html">Most Popular Multi-Media Content</a>
+            </li>
             <li><a href="upload.html">Upload Your Own Content</a></li>
             <li><a href="about.html">About Us and Our Goals</a></li>
           </ul>
@@ -226,13 +293,11 @@
             <li><a href="signup.html">Sign Up to unlock all features</a></li>
           </ul>
         </div>
-
       </div>
 
       <div class="footer-bottom">
         <p>© <span id="year"></span> My Website. All rights reserved.</p>
       </div>
     </footer>
-</body>
-
+  </body>
 </html>

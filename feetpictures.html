@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feet Hub</title>
+    <link rel="stylesheet" href="feethub-style.css">
+</head>
+
+<body>
+    <nav class="top-nav" role="menubar">
+        <ul class="nav-categories">
+            <li>
+                <button onclick="location.href='homepage.html'" class="main-category">
+                    Back To The Home Page
+                </button>
+            </li>
+            <li>
+                <button class="main-category" data-category="pictures" aria-expanded="false" aria-controls="sub-nav">
+                    Feet Pictures <span class="arrow">▼</span>
+                </button>
+            </li>
+
+            <li>
+                <button class="main-category" data-category="videos" aria-expanded="false" aria-controls="sub-nav">
+                    Feet Videos <span class="arrow">▼</span>
+                </button>
+            </li>
+
+            <li>
+                <button class="main-category" data-category="popular" aria-expanded="false" aria-controls="sub-nav">
+                    Most Popular <span class="arrow">▼</span>
+                </button>
+            </li>
+
+            <li>
+                <button onclick="location.href='topactor.html'" class="main-category">
+                    Top Foot Actor Rankings
+                </button>
+            </li>
+
+            <li>
+                <button onclick="location.href='upload.html'" class="main-category">
+                    Upload Your Own Content
+                </button>
+            </li>
+
+            <li>
+                <button onclick="location.href='account.html'" class="main-category">
+                    Your Account
+                </button>
+            </li>
+        </ul>
+
+        <div class="nav-indicator"></div>
+    </nav>
+
+    <div class="sub-nav" id="sub-nav" role="menu">
+        <ul class="sub-nav-list" data-parent="pictures">
+            <li><a href="efeetpictures.html">Ebony Feet</a></li>
+            <li><a href="wfeetpictures.html">White Feet</a></li>
+            <li><a href="ptnfeetpictures.html">Painted Toe Nails</a></li>
+            <li><a href="fisfeetpictures.html">Feet In Socks</a></li>
+            <li><a href="afeetpictures.html">Anime Feet</a></li>
+            <li><a href="fcfeetpictures.html">Feet Closeups</a></li>
+            <li><a href="cfeetpictures.html">Cartoon Feet</a></li>
+        </ul>
+
+        <ul class="sub-nav-list" data-parent="videos">
+            <li><a href="fbrfeetvideos.html">Feet Being Rubbed</a></li>
+            <li><a href="fbofeetvideos.html">Feet Being Oiled</a></li>
+            <li><a href="figfeetvideos.html">Feet In General</a></li>
+        </ul>
+
+        <ul class="sub-nav-list" data-parent="popular">
+            <li><a href="figfeetpictures.html">Feet In General ( Pictures Of Feet )</a></li>
+            <li><a href="ptnfeetpictures.html">Painted Toe Nails</a></li>
+            <li><a href="wfeetpictures.html">White Feet</a></li>
+        </ul>
+    </div>
+    <header class="hero">
+        <h1>Feet Pictures</h1>
+        <p>
+            Explore our extensive collection of feet pictures, featuring a variety of styles and themes to satisfy your
+            foot fascination. Whether you're into close-ups, painted toenails, or feet in socks, we've got something for
+            every foot enthusiast.
+        </p>
+        
+        <script src="data.js"></script>
+        <script src="script.js"></script>
+        <script src="navscript.js"></script>
+
+        <footer class="site-footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li>
+                            <a href="mostpopular.html">Most Popular Multi-Media Content</a>
+                        </li>
+                        <li><a href="upload.html">Upload Your Own Content</a></li>
+                        <li><a href="about.html">About Us and Our Goals</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Account</h4>
+                    <ul>
+                        <li><a href="login.html">Log In to your account</a></li>
+                        <li><a href="signup.html">Sign Up to unlock all features</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© <span id="year"></span> My Website. All rights reserved.</p>
+            </div>
+        </footer>
+</body>
+
+</html>
